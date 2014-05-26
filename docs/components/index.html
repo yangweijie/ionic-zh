@@ -1,0 +1,3753 @@
+---
+layout: docs_css
+title: CSS 组件
+header_title: CSS 组件
+header_sub_title: 可重用和定制化的前后端UI 元素
+news: Need icons? Check out <a href="http://ionicons.com/">Ionicons</a>, our custom-built icon font made specifically for Ionic.
+search_sections: true
+---
+
+<div class="device-preview ionic">
+  <div class="screen-bg"></div>
+  <div class="default-screen ionic-body active-preview">
+    <div class="content-wrapper">
+      <div class="content padding has-header"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Header
+  ================================================== -->
+<section class="docs-section active" id="header">
+
+  <h3 class="title"><a href="#header">Header</a></h3>
+
+  <p>
+    Headers是固定在屏幕顶部的区域可以包含一个title表签、和用来导航或者做各种行为的 <a href="#buttons-headers-footers">左/右按钮</a>。
+  </p>
+
+  <p>Headers 有丰富的默认<a href="#colors">颜色选项</a>:</p>
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-light"><div class="h1 title">bar-light</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-light">
+  <h1 class="title">bar-light</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-stable"><div class="h1 title">bar-stable</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-stable">
+  <h1 class="title">bar-stable</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-positive"><div class="h1 title">bar-positive</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-positive">
+  <h1 class="title">bar-positive</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-calm"><div class="h1 title">bar-calm</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-calm">
+  <h1 class="title">bar-calm</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-balanced"><div class="h1 title">bar-balanced</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-balanced">
+  <h1 class="title">bar-balanced</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-energized"><div class="h1 title">bar-energized</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-energized">
+  <h1 class="title">bar-energized</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-assertive"><div class="h1 title">bar-assertive</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-assertive">
+  <h1 class="title">bar-assertive</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-royal"><div class="h1 title">bar-royal</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-royal">
+  <h1 class="title">bar-royal</h1>
+</div>
+{% endhighlight %}
+
+  <div class="ionic ionic-example">
+    <div class="bar bar-header bar-dark"><div class="h1 title">bar-dark</div></div>
+  </div>
+{% highlight html %}
+<div class="bar bar-header bar-dark">
+  <h1 class="title">bar-dark</h1>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Header</div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Sub Header
+  ================================================== -->
+<section class="docs-section" id="subheader">
+
+  <h3 class="title"><a href="#subheader">Sub Header</a></h3>
+  <p>
+    一个可以放在原始头部条下方的子级头部。有很多方式定制头部。看一下
+    <a href="#button-bar">Button Bars</a>获得它如何可以被使用的想法。
+  </p>
+{% highlight html %}
+<div class="bar bar-header">
+  <h1 class="title">Header</h1>
+</div>
+<div class="bar bar-subheader">
+  <h2 class="title">Sub Header</h2>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Header</div>
+    </div>
+    <div class="bar bar-subheader bar-secondary">
+      <div class="h2 title">Sub Header</div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Content
+  ================================================== -->
+<section class="docs-section" id="content">
+
+  <h3 class="title"><a href="#content">Content</a></h3>
+
+  <p>
+    Ionic中的内容区域是你应用中可以滚动的viewport。
+    当你头部和底部固定主的时候，分别地内容区域将会填充剩余可用空间。
+  </p>
+
+  <p class="advanced-panel">
+    <em>*</em> 更多内容选项，参见
+    <a href="/docs/api/directive/ionContent">Content</a> 文档。
+  </p>
+
+  <div class="doc-example">
+    <div class="bar bar-header">
+      <div class="h1 title">Content</div>
+    </div>
+    <div class="content has-header padding">
+      <h1>I'm an H1!</h1>
+      <h2>I'm an H2!</h2>
+      <h3>I'm an H3!</h3>
+      <h4>I'm an H4!</h4>
+      <h5>I'm an H5!</h5>
+      <h6>I'm an H6!</h6>
+      <p>I'm a paragraph with a <a href="#">link</a>!</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Footer
+  ================================================== -->
+<section class="docs-section" id="footer">
+
+  <h3 class="title"><a href="#footer">Footer</a></h3>
+
+  <p>
+    底部是屏幕底部可以包含各种类型内容的区域。
+  </p>
+
+{% highlight html %}
+<div class="bar bar-footer bar-balanced">
+  <div class="title">Footer</div>
+</div>
+{% endhighlight %}
+
+  <p>
+    底部有着和头部一样的颜色选项，只要用 <code>bar-footer</code> 替换 <code>bar-header</code>。如果一个title放在底部中，如何按钮将会自动相对于如何标记写在title附近的位置放在正确的title边上，比如:
+  </p>
+
+{% highlight html %}
+<div class="bar bar-footer">
+  <button class="button button-clear">Left</button>
+  <div class="title">Title</div>
+  <button class="button button-clear">Right</button>
+</div>
+{% endhighlight %}
+
+  <p>
+    另外，如果没有标题，然后要一个右侧按钮，你将需要添加
+    <code>pull-right</code> to 到右侧按钮上，比如:
+  </p>
+
+{% highlight html %}
+<div class="bar bar-footer">
+  <button class="button button-clear pull-right">Right</button>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Header</div>
+    </div>
+    <div class="bar bar-footer bar-balanced">
+      <div class="title">Footer</div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Buttons
+  ================================================== -->
+<section class="docs-section" id="buttons">
+
+  <h3 class="title"><a href="#buttons">Buttons</a></h3>
+
+  <p>
+    额，按钮，一个任何移动体验的重要组成部分。和 <a href="#header">Header</a>, 一样它们也在Ionic的<a href="#colors">默认颜色</a>全谱中。
+  </P>
+  <p>
+    默认的一个按钮用了 <code>display: inline-block</code>样式。其他选项包括 <code>block</code> 用于全宽按钮。
+  </p>
+
+{% highlight html %}
+<button class="button">
+  Default
+</button>
+
+<button class="button button-light">
+  button-light
+</button>
+
+<button class="button button-stable">
+  button-stable
+</button>
+
+<button class="button button-positive">
+  button-positive
+</button>
+
+<button class="button button-calm">
+  button-calm
+</button>
+
+<button class="button button-balanced">
+  button-balanced
+</button>
+
+<button class="button button-energized">
+  button-energized
+</button>
+
+<button class="button button-assertive">
+  button-assertive
+</button>
+
+<button class="button button-royal">
+  button-royal
+</button>
+
+<button class="button button-dark">
+  button-dark
+</button>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Buttons</div>
+    </div>
+    <div class="content has-header padding">
+
+      <p><button class="button button-light">button-light</button>
+      <p><button class="button button-stable">button-stable</button>
+      <p><button class="button button-positive">button-positive</button>
+      <p><button class="button button-calm">button-calm</button>
+      <p><button class="button button-balanced">button-balanced</button>
+      <p><button class="button button-energized">button-energized</button>
+      <p><button class="button button-assertive">button-assertive</button>
+      <p><button class="button button-royal">button-royal</button>
+      <p><button class="button button-dark">button-dark</button>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Block Buttons
+  ================================================== -->
+<section class="docs-section" id="block-buttons">
+
+  <h3 class="title"><a href="#block-buttons">Block Buttons</a></h3>
+  <p>
+    添加 <code>button-block</code> 类名到一个按钮用将会应用 <code>display: block</code> 显示。
+    一个全宽按钮将变成它父元素的宽度的100%。
+    在例子中，按钮包含的内容也将又<code>padding</code> ,
+    因此设备和按钮间有了喘息的空间。
+  </p>
+
+{% highlight html %}
+<button class="button button-block button-positive">
+  Block Button
+</button>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Block Buttons</div>
+    </div>
+    <div class="content padding has-header">
+      <button class="button button-block button-light">button-light</button>
+      <button class="button button-block button-stable">button-stable</button>
+      <button class="button button-block button-positive">button-positive</button>
+      <button class="button button-block button-calm">button-calm</button>
+      <button class="button button-block button-balanced">button-balanced</button>
+      <button class="button button-block button-energized">button-energized</button>
+      <button class="button button-block button-assertive">button-assertive</button>
+      <button class="button button-block button-royal">button-royal</button>
+      <button class="button button-block button-dark">button-dark</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Full Width Block Buttons
+  ================================================== -->
+<section class="docs-section" id="full-buttons">
+
+  <h3 class="title"><a href="#full-buttons">全宽块按钮</a></h3>
+  <p>
+    添加 <code>button-full</code> 来使一个按钮不仅有 <code>display: block</code>效果，
+    而且移除了左右边和任何可能被使用的border-radius 效果。
+    这个样式对于当按钮应当拉伸到显示的整个宽度的时候很有用。
+    另外，按钮的父元素<em>不能</em> 有 <code>padding</code> 效果。
+  </p>
+
+{% highlight html %}
+<button class="button button-full button-positive">
+  Full Width Block Button
+</button>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Full Width Block Buttons</div>
+    </div>
+    <div class="content has-header">
+      <button class="button button-full button-light">button-light</button>
+      <button class="button button-full button-stable">button-stable</button>
+      <button class="button button-full button-positive">button-positive</button>
+      <button class="button button-full button-calm">button-calm</button>
+      <button class="button button-full button-balanced">button-balanced</button>
+      <button class="button button-full button-energized">button-energized</button>
+      <button class="button button-full button-assertive">button-assertive</button>
+      <button class="button button-full button-royal">button-royal</button>
+      <button class="button button-full button-dark">button-dark</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Button Sizes
+  ================================================== -->
+<section class="docs-section" id="button-sizes">
+
+  <h3 class="title"><a href="#button-sizes">不同尺寸</a></h3>
+  <p>
+    添加 <code>button-large</code> 来使一个按钮更大，添加 <code>button-small</code>
+    让它更小。
+  </p>
+
+{% highlight html %}
+<button class="button button-small button-assertive">
+  Small Button
+</button>
+<button class="button button-large button-positive">
+  Large Button
+</button>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Small and Large Buttons</div>
+    </div>
+    <div class="content has-header">
+      <p>
+        <button class="button button-small button-light">button-light</button>
+      </p>
+      <p>
+        <button class="button button-small button-stable">button-stable</button>
+      </p>
+      <p>
+        <button class="button button-small button-positive">button-positive</button>
+      </p>
+      <p>
+        <button class="button button-small button-calm">button-calm</button>
+      </p>
+      <p>
+        <button class="button button-small button-balanced">button-balanced</button>
+      </p>
+      <p>
+        <button class="button button-large button-energized">button-energized</button>
+      </p>
+      <p>
+        <button class="button button-large button-assertive">button-assertive</button>
+      </p>
+      <p>
+        <button class="button button-large button-royal">button-royal</button>
+      </p>
+      <p>
+        <button class="button button-large button-dark">button-dark</button>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Outlined Buttons
+  ================================================== -->
+<section class="docs-section" id="outlined-buttons">
+
+  <h3 class="title"><a href="#outlined-buttons">Outlined Buttons</a></h3>
+
+  <p>
+    使用<code>button-outline</code>来应用细边按钮样式，同时有着透明背景。
+  </p>
+  <p>
+    <strong>注意：</strong> 文字和边框将会采用应用按钮的样式，意味着
+    <code>button-positive</code> 将会是蓝色文字和边框透明背景。
+  </p>
+
+{% highlight html %}
+<button class="button button-outline button-positive">
+  Outlined Button
+</button>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Outlined Buttons</div>
+    </div>
+    <div class="content padding has-header">
+      <p>
+        <button class="button button-outline button-light">button-light</button>
+      </p>
+      <p>
+        <button class="button button-outline button-stable">button-stable</button>
+      </p>
+      <p>
+        <button class="button button-outline button-positive">button-positive</button>
+      </p>
+      <p>
+        <button class="button button-outline button-calm">button-calm</button>
+      </p>
+      <p>
+        <button class="button button-outline button-balanced">button-balanced</button>
+      </p>
+      <p>
+        <button class="button button-outline button-energized">button-energized</button>
+      </p>
+      <p>
+        <button class="button button-outline button-assertive">button-assertive</button>
+      </p>
+      <p>
+        <button class="button button-outline button-royal">button-royal</button>
+      </p>
+      <p>
+        <button class="button button-outline button-dark">button-dark</button>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Clear Buttons
+  ================================================== -->
+<section class="docs-section" id="clear-buttons">
+
+  <h3 class="title"><a href="#clear-buttons">Clear Buttons</a></h3>
+
+  <p>
+    添加<code>button-clear</code> 来移除边框和使文字吐出来。
+  </p>
+  <p>
+    <strong>注意：</strong> 文字和边框将会采用应用按钮的样式，意味着
+    <code>button-positive</code> 将会是蓝色文字和没有边框不是蓝色背景。
+  </p>
+
+{% highlight html %}
+<button class="button button-clear button-positive">
+  Clear Button
+</button>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Clear Buttons</div>
+    </div>
+    <div class="content padding has-header">
+      <p>
+        <button class="button button-clear button-light">button-light</button>
+      </p>
+      <p>
+        <button class="button button-clear button-stable">button-stable</button>
+      </p>
+      <p>
+        <button class="button button-clear button-positive">button-positive</button>
+      </p>
+      <p>
+        <button class="button button-clear button-calm">button-calm</button>
+      </p>
+      <p>
+        <button class="button button-clear button-balanced">button-balanced</button>
+      </p>
+      <p>
+        <button class="button button-clear button-energized">button-energized</button>
+      </p>
+      <p>
+        <button class="button button-clear button-assertive">button-assertive</button>
+      </p>
+      <p>
+        <button class="button button-clear button-royal">button-royal</button>
+      </p>
+      <p>
+        <button class="button button-clear button-dark">button-dark</button>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Icon Buttons
+  ================================================== -->
+<section class="docs-section" id="icon-buttons">
+
+  <h3 class="title"><a href="#icon-buttons">Icon Buttons</a></h3>
+
+  <p>
+    图标可以轻松地添加到任何按钮上通过使用内建的Ionicons, 或者其他你选择的字体包 <a href="#icons">了解更多关于图标</a>。
+  </p>
+
+  <p>
+    图标既可以作为按钮的子元素，然而分配图标直接到按钮上减少DOM元素的数量。
+  </p>
+
+{% highlight html %}
+<button class="button">
+  <i class="icon ion-loading-c"></i> Loading...
+</button>
+
+<button class="button icon-left ion-home">Home</button>
+
+<button class="button icon-left ion-star button-positive">Favorites</button>
+
+<a class="button icon-right ion-chevron-right button-calm">Learn More</a>
+
+<a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+
+<button class="button icon ion-gear-a"></button>
+
+<a class="button button-icon icon ion-settings"></a>
+
+<a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Icon Buttons</div>
+    </div>
+    <div class="content padding has-header">
+      <p>
+        <button class="button icon-left ion-home">Home</button>
+      </p>
+      <p>
+        <button class="button icon-left ion-star button-positive">Favorites</button>
+      </p>
+      <p>
+        <a class="button icon-right ion-chevron-right button-calm">Learn More</a>
+      </p>
+      <p>
+        <a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+      </p>
+      <p>
+        <button class="button icon ion-gear-a"></button>
+      </p>
+      <p>
+        <a class="button button-icon icon ion-settings"></a>
+      </p>
+      <p>
+        <a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Buttons in Headers/Footers
+  ================================================== -->
+<section class="docs-section" id="buttons-headers-footers">
+
+  <h3 class="title"><a href="#buttons-headers-footers">头部中的按钮</a></h3>
+
+  <p>
+    当按钮被放置在头部或者底部里，他们默认采用bar的样式，因此你不必使用额外的样式类。要改变这个，添加想要的样式类名。
+  </p>
+
+{% highlight html %}
+<div class="bar bar-header">
+  <button class="button icon ion-navicon"></button>
+  <h1 class="title">Header Buttons</h1>
+  <button class="button">Edit</button>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="padding">
+      <div class="bar bar-header">
+        <button class="button icon ion-navicon"></button>
+        <div class="h1 title">Header Buttons</div>
+        <button class="button">Edit</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Clear Buttons in Headers
+  ================================================== -->
+<section class="docs-section" id="clear-buttons-headers">
+
+  <h3 class="title"><a href="#clear-buttons-headers">Clear Buttons in Headers</a></h3>
+
+  <p>
+    要一个更小的头部按钮，简单地添加<code>button-clear</code> 类名来移除按钮的背景色和边框。
+  </p>
+
+{% highlight html %}
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-navicon"></button>
+  <div class="h1 title">Header Buttons</div>
+  <button class="button button-clear button-positive">Edit</button>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="padding">
+      <div class="bar bar-header">
+        <button class="button button-icon icon ion-navicon"></button>
+        <div class="h1 title">Header Buttons</div>
+        <button class="button button-clear button-positive">Edit</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Button Bar
+  ================================================== -->
+<section class="docs-section" id="button-bar">
+
+  <h3 class="title"><a href="#button-bar">Button Bar</a></h3>
+  <p>
+    按钮也可以被简单地分组通过使用<code>button-bar</code> 类名。
+    在例子中，一个按钮条被添加到了默认的头部条里，也添加到了屏幕的主内容区域里。
+  </p>
+
+{% highlight html %}
+<div class="button-bar">
+  <a class="button">First</a>
+  <a class="button">Second</a>
+  <a class="button">Third</a>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="bar bar-header">
+        <div class="button-bar">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </div>
+    </div>
+    <div class="content has-header padding">
+      <p>
+        <div class="button-bar bar-light">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-stable">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-positive">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-calm">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-energized">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-balanced">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-assertive">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-royal">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+      <p>
+        <div class="button-bar bar-dark">
+          <a class="button">First</a>
+          <a class="button">Second</a>
+          <a class="button">Third</a>
+        </div>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- List
+  ================================================== -->
+<section class="docs-section" id="list">
+
+  <h3 class="title"><a href="#list">列表</a></h3>
+
+  <p>
+    列表是一个通用和简单的展示方式...这是对的，一个列表。 这是在大多数目前的移动操作系统中广泛使用的一种接口，并且可以包含的内容从基本的文本到按钮，切换，图标和缩略图。
+  </p>
+  <p>
+    列表视图是一个非常多才多艺和强大的组件。 列表视图支持多种互动模式，如编辑，滑动编辑，拖动重新排列，下拉来刷新。
+  </p>
+  <p>
+    更多你可以使用的 Ionic的 AngularJS 指令。参见 <a href="/docs/api/directive/ionList/">AngularJS list docs</a> 来获得更多信息。
+  </p>
+
+
+{% highlight html %}
+<ul class="list">
+    <li class="item">
+      ...
+    </li>
+</ul>
+{% endhighlight %}
+
+  <p class="advanced-panel">
+    <em>*</em> 更多可扩展Lists的概述请读
+    <a href="/docs/api/directive/ionList/">AngularJS List Docs</a>
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">List Items</div>
+    </div>
+    <div class="content has-header">
+
+      <ul class="list">
+
+        <li class="item">
+          Battletoads
+        </li>
+        <li class="item">
+          Contra
+        </li>
+        <li class="item">
+          Duck Tales
+        </li>
+        <li class="item">
+          Mega Man
+        </li>
+        <li class="item">
+          Metroid
+        </li>
+        <li class="item">
+          Mike Tyson's Punch-Out
+        </li>
+        <li class="item">
+          R.C. Pro-Am
+        </li>
+        <li class="item">
+          Spy Hunter
+        </li>
+        <li class="item">
+          Super Mario Bros.
+        </li>
+        <li class="item">
+          The Legend of Zelda
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- List Dividers
+  ================================================== -->
+<section class="docs-section" id="item-dividers">
+
+  <h3 class="title"><a href="#item-dividers">List 分割</a></h3>
+
+  <p>
+    List 项目也可以被分割来组织和分组列表项目。使用 <code>item-divider</code>
+    类名来创建一个任何列表子元素的分割。默认的列表项目分割将有有一个不同背景色和字体粗细，但是可以轻松定制。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+  <div class="item item-divider">
+    Candy Bars
+  </div>
+
+  <a class="item" href="#">
+    Butterfinger
+  </a>
+
+  ...
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">List Dividers</div>
+    </div>
+
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list">
+
+        <div class="item item-divider">
+          Candy Bars
+        </div>
+
+        <a class="item" href="#">
+          Butterfinger
+        </a>
+
+        <a class="item" href="#">
+          Kit Kat
+        </a>
+
+        <a class="item" href="#">
+          Snickers
+        </a>
+
+        <a class="item" href="#">
+          Twix
+        </a>
+
+        <div class="item item-divider">
+          Hard Candy
+        </div>
+
+        <a class="item" href="#">
+          Jolly Rancher
+        </a>
+
+        <a class="item" href="#">
+          LifeSavers
+        </a>
+
+        <a class="item" href="#">
+          Skittles
+        </a>
+
+        <a class="item" href="#">
+          Gobstoppers
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- List Icons
+  ================================================== -->
+<section class="docs-section" id="item-icons">
+
+  <h3 class="title"><a href="#item-icons">列表图标</a></h3>
+
+  <p>
+    列表可以有图标放置在左侧或右侧，对齐类名应当分配给每一个 <code>单项</code> 元素。图标可以轻松的被添加到任何单项通过内建的Ionicons或任何你选择的定制的字体包。<a href="#icons">了解更多关于图标</a>.
+  </p>
+  <p>
+    使用 <code>item-icon-left</code> 来使当前行的图标到左侧，然后<code>item-icon-right</code>
+    设置图标到右侧。当一个列表项目有一个图标在两侧，两个类名都要有使用。
+  </p>
+  <p>
+    这个例子使用一个 <code>&lt;a&gt;</code> 元素给每个单项，这样使整个列表单项可以被触摸。如果单项是一个 <code>&lt;a&gt;</code> or <code>&lt;按钮元素&gt;</code>
+    ，并且没有添加到右侧的图标，那么一个将会自动添加一个小的向右箭头。
+  </p>
+  <p>
+    在例子中，第一个单项只有一个左侧的图标。第二个单项左右各一个。第三个没有右侧图标（默认的向右箭头）。另外，第三个单项还有一个<code>item-note</code>。第四个图标加了一个<code>badge</code> 元素。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-email"></i>
+    Check mail
+  </a>
+
+  <a class="item item-icon-left item-icon-right" href="#">
+    <i class="icon ion-chatbubble-working"></i>
+    Call Ma
+    <i class="icon ion-ios7-telephone-outline"></i>
+  </a>
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-mic-a"></i>
+    Record album
+    <span class="item-note">
+      Grammy
+    </span>
+  </a>
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-person-stalker"></i>
+    Friends
+    <span class="badge badge-assertive">0</span>
+  </a>
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">List Icons</div>
+    </div>
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list">
+
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-email"></i>
+          Check mail
+        </a>
+
+        <a class="item item-icon-left item-icon-right" href="#">
+          <i class="icon ion-chatbubble-working"></i>
+          Call Ma
+          <i class="icon ion-ios7-telephone-outline"></i>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-mic-a"></i>
+          Record album
+          <span class="item-note">
+            Grammy
+          </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-person-stalker"></i>
+          Friends
+          <span class="badge badge-assertive">0</span>
+        </a>
+
+        <div class="item item-divider">
+          Activities
+        </div>
+
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-flask"></i>
+          Breaking Bad
+          <span class="item-note">
+            Blue, yellow, pink
+          </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-music-note"></i>
+          Music
+          <span class="item-note">
+            JT
+          </span>
+        </a>
+
+        <a class="item item-icon-left" href="#">
+          <i class="icon ion-game-controller-b"></i>
+          Games
+          <span class="item-note">
+            Super Mario
+          </span>
+        </a>
+
+        <a class="item item-icon-left item-icon-right" href="#">
+          <i class="icon ion-bag"></i>
+          Shopping
+          <i class="icon ion-arrow-right-c"></i>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Item Buttons
+  ================================================== -->
+<section class="docs-section" id="item-buttons">
+
+  <h3 class="title"><a href="#item-buttons">列表 按钮</a></h3>
+
+  <p>
+    使用 <code>item-button-right</code> 或 <code>item-button-left</code> 来在单项中放置一个按钮。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+  <div class="item item-button-right">
+    Call Ma
+    <button class="button button-positive">
+      <i class="icon ion-ios7-telephone"></i>
+    </button>
+  </div>
+
+  ...
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">List Buttons</div>
+    </div>
+
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list">
+
+        <div class="item item-button-right">
+          Call Ma
+          <button class="button button-positive">
+            <i class="icon ion-ios7-telephone"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Item Avatars
+  ================================================== -->
+<section class="docs-section" id="item-avatars">
+
+  <h3 class="title"><a href="#item-avatars">单项头像</a></h3>
+
+  <p>
+    单项头像本质上是一个比图标更大的展示，但是比一个缩率图小。
+    要创建一个单项头像，使用<code>item-avatar</code> 类名。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+    <a class="item item-avatar" href="#">
+      <img src="venkman.jpg">
+      <h2>Venkman</h2>
+      <p>Back off, man. I'm a scientist.</p>
+    </a>
+
+    ...
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Item Avatars</div>
+    </div>
+
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list">
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/venkman.jpg">
+          <h2>Venkman</h2>
+          <p>Back off, man. I'm a scientist.</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/spengler.jpg">
+          <h2>Egon</h2>
+          <p>We're gonna go full stream.</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/stantz.jpg">
+          <h2>Ray</h2>
+          <p>Ugly little spud, isn't he?</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/winston.jpg">
+          <h2>Winston</h2>
+          <p>That's a big Twinkie.</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/tully.jpg">
+          <h2>Tully</h2>
+          <p>Okay, who brought the dog?</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/barrett.jpg">
+          <h2>Dana</h2>
+          <p>I am The Gatekeeper!</p>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <img src="/img/docs/slimer.jpg">
+          <h2>Slimer</h2>
+          <p>Boo!</p>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Item Thumbnails
+  ================================================== -->
+<section class="docs-section" id="item-thumbnails">
+
+  <h3 class="title"><a href="#item-thumbnails">单项缩率图</a></h3>
+
+  <p>
+    单项缩率图本质是一个比图标更大的展示，而且将经常跨域/定义整个列表单项的高度。要创建一个缩率图的单项，使用 <code>item-thumbnail-left</code> 来让其在左侧，<code>item-thumbnail-right</code> 用于右侧。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="cover.jpg">
+      <h2>Pretty Hate Machine</h2>
+      <p>Nine Inch Nails</p>
+    </a>
+
+    ...
+
+</div>
+{% endhighlight %}
+
+  <p>
+    <a href="http://codepen.io/ionic/pen/isfAJ">快速 ng-repeat demo</a>
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Item Thumbnails</div>
+    </div>
+
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list">
+
+        <a class="item item-thumbnail-left" href="#">
+          <img src="/img/docs/blue-album.jpg">
+          <h2>Weezer</h2>
+          <p>Blue Album</p>
+        </a>
+
+        <a class="item item-thumbnail-left" href="#">
+          <img src="/img/docs/siamese-dream.jpg">
+          <h2>Smashing Pumpkins</h2>
+          <p>Siamese Dream</p>
+        </a>
+
+        <a class="item item-thumbnail-left" href="#">
+          <img src="/img/docs/nevermind.jpg">
+          <h2>Nirvana</h2>
+          <p>Nevermind</p>
+        </a>
+
+        <a class="item item-thumbnail-left" href="#">
+          <img src="/img/docs/license-to-ill.jpg">
+          <h2>Beastie Boys</h2>
+          <p>License To Ill</p>
+        </a>
+
+        <a class="item item-thumbnail-left" href="#">
+          <img src="/img/docs/dookie.jpg">
+          <h2>Green Day</h2>
+          <p>Dookie</p>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Inset Lists
+  ================================================== -->
+<section class="docs-section" id="list-inset">
+
+  <h3 class="title"><a href="#list-inset">内嵌列表</a></h3>
+
+  <p>
+    列表也可以被内嵌到它们的容器里，而不是全宽。主要区别是一个 <code>list list-inset</code> 元素有外边距。一个内嵌列表和一个<a href="#cards">card</a>相似，除此之外，一个内嵌列表没有一个 box-shadow。因为<code>list list-inset</code> 没有一个 box-shadow,在滚动时它将会有更好的性能。
+    <a href="#inset-forms">Inset forms</a> 展示了它用法的其他例子。
+  </p>
+
+{% highlight html %}
+<div class="list list-inset">
+
+    <div class="item">
+      Raiders of the Lost Ark
+    </div>
+
+    ...
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Inset Lists</div>
+    </div>
+
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list list-inset">
+
+        <div class="item">
+          Raiders of the Lost Ark
+        </div>
+
+        <div class="item">
+          Temple of Doom
+        </div>
+
+        <div class="item">
+          Last Crusade
+        </div>
+
+        <div class="item">
+          Kingdom of the Crystal Skull
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Cards
+  ================================================== -->
+<section class="docs-section" id="cards">
+
+  <h3 class="title"><a href="#cards">卡片</a></h3>
+
+  <p>
+    卡片已经在最近几年广泛使用。它们是一个伟大的方式来包含和组织信息，同时建立一个用户可预计的预期。一次有这么多内容显示经常在一个不可变的小屏幕上，卡片已经很快变成许多公司选择的设计模式，包括像<a href="http://www.google.com/landing/now/" target="_blank">Google</a>, <a href="https://dev.twitter.com/docs/cards" target="_blank">Twitter</a>, 还有 <a href="https://play.spotify.com/discover" target="_blank">Spotify</a>..
+  </p>
+  <p>
+    对于移动体验，卡片可以很容易直观地在许多不同尺寸的屏幕显示相同的信息。 它们允许更多控制，灵活，甚至可以是动画。卡片通常在另一个的上方，但是它们也可以用来像一个"page",然后左右滑动。
+  </p>
+
+{% highlight html %}
+<div class="card">
+  <div class="item item-text-wrap">
+    This is a basic Card which contains an item that has wrapping text.
+  </div>
+</div>
+{% endhighlight %}
+
+  <p>
+    卡片默认添加了一个box-shadow，然而它的堂兄<code>list list-inset</code> 没有。由于性能原因，当滚动一个大卡片有着好你多项目推荐使用 <a href="#list-inset">inset lists</a> 替代。
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Cards</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="card">
+        <div class="item item-text-wrap">
+          This is a basic Card which contains an item that has wrapping text.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Cards Headers/Footers
+  ================================================== -->
+<section class="docs-section" id="card-headers-footers">
+
+  <h3 class="title"><a href="#card-headers-footers">卡片头部和底部</a></h3>
+
+  <p>
+    卡片可以被定制类似于你将如何填充一个正常的屏幕。举个例子，一个卡片内部可以轻松的拥有头部和底部。添加<code>item-divider</code> 类名在<code>card</code> 元素上方或下方。
+  </p>
+
+{% highlight html %}
+<div class="card">
+  <div class="item item-divider">
+    I'm a Header in a Card!
+  </div>
+  <div class="item item-text-wrap">
+    This is a basic Card with some text.
+  </div>
+  <div class="item item-divider">
+    I'm a Footer in a Card!
+  </div>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Cards</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="card">
+        <div class="item item-divider">
+          I'm a Header in a Card!
+        </div>
+        <div class="item item-text-wrap">
+          This is a basic Card with some text.
+        </div>
+        <div class="item item-divider">
+          I'm a Footer in a Card!
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Card Lists
+  ================================================== -->
+<section class="docs-section" id="card-lists">
+
+  <h3 class="title"><a href="#card-lists">卡片列表</a></h3>
+
+  <p>
+    使用 <code>list card</code> 类名来创建一个有列表的卡片。
+  </p>
+
+{% highlight html %}
+<div class="list card">
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-home"></i>
+    Enter home address
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios7-telephone"></i>
+    Enter phone number
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-wifi"></i>
+    Enter wireless password
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-card"></i>
+    Enter card information
+  </a>
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Card Lists</div>
+    </div>
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list card">
+
+        <a href="#" class="item item-icon-left">
+          <i class="icon ion-home"></i>
+          Enter home address
+        </a>
+
+        <a href="#" class="item item-icon-left">
+          <i class="icon ion-ios7-telephone"></i>
+          Enter phone number
+        </a>
+
+        <a href="#" class="item item-icon-left">
+          <i class="icon ion-wifi"></i>
+          Enter wireless password
+        </a>
+
+        <a href="#" class="item item-icon-left">
+          <i class="icon ion-card"></i>
+          Enter card information
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Card Images
+  ================================================== -->
+<section class="docs-section" id="card-images">
+
+  <h3 class="title"><a href="#card-images">卡片图片</a></h3>
+
+  <p>
+    图片看上棒极了在卡片中，可以和列表其他元素结合。
+  </p>
+
+{% highlight html %}
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="avatar.jpg">
+    <h2>Pretty Hate Machine</h2>
+    <p>Nine Inch Nails</p>
+  </div>
+
+  <div class="item item-image">
+    <img src="cover.jpg">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-music-note"></i>
+    Start listening
+  </a>
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Cards</div>
+    </div>
+    <div class="content has-header ionic-pseudo">
+
+      <div class="list card">
+
+        <div class="item item-avatar">
+          <img src="http://tutupash.com/site/assets/nin_logo.jpeg">
+          <h2>Pretty Hate Machine</h2>
+          <p>Nine Inch Nails</p>
+        </div>
+
+        <div class="item item-image">
+          <img src="http://ecx.images-amazon.com/images/I/41D5vU4I1NL.jpg">
+        </div>
+
+        <a class="item item-icon-left assertive" href="#">
+          <i class="icon ion-music-note"></i>
+          Start listening
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Card Showcase
+  ================================================== -->
+<section class="docs-section" id="card-showcase">
+
+  <h3 class="title"><a href="#card-showcase">Card Showcase</a></h3>
+
+  <p>
+    这里有一个使用几个不同单项的卡片展示。它首先从<code>list card</code> 元素开始，利用 <code>item-avatar</code> 列表项，一个<code>item-body</code>元素用来包含图片和文字，然后一个有者<code>item-divider</code> 类名的底部。
+  </p>
+
+{% highlight html %}
+<div class="list card">
+
+  <div class="item item-avatar">
+    <img src="mcfly.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="delorean.jpg">
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chatbox"></i>
+      Comment
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-share"></i>
+      Share
+    </a>
+  </div>
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Cards</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="list card">
+
+        <div class="item item-avatar">
+          <img src="/img/docs/mcfly.jpg">
+          <h2>Marty McFly</h2>
+          <p>November 05, 1955</p>
+        </div>
+
+        <div class="item item-body">
+          <img class="full-image" src="/img/docs/delorean.jpg">
+          <p>
+            This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+            the content is from a card-body consisting of an image and paragraph text. The footer
+            consists of a tabs, icons aligned left, within the card-footer.
+          </p>
+          <p>
+            <a href="#" class="subdued">1 Like</a>
+            <a href="#" class="subdued">5 Comments</a>
+          </p>
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#">
+            <i class="icon ion-thumbsup"></i>
+            Like
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-chatbox"></i>
+            Comment
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Forms
+  ================================================== -->
+<section class="docs-section" id="forms">
+
+  <h3 class="title"><a href="#forms">表单 &amp; 输入选框</a></h3>
+
+  <p>
+    一个 <code>list</code>也可以用来分组相关输入元素。 <code>item-input</code>
+    和<code>item</code> 都是用来指定每个独立输入字段和它相关的标签。
+  </p>
+  <p>
+    Ionic更倾向创建 <code>item-input</code>在 <code>&lt;label&gt;</code>元素外面这样当然后行的部分被触摸了底层输入项就会接受到聚焦。
+  </p>
+  <p>
+    另外，开发者应当注意丰富的<a href="/html5-input-types/">HTML5 输入类型</a>这样用户将会看到相应的虚拟键盘。
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Forms</div>
+    </div>
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name">
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Forms: Placeholder Labels
+  ================================================== -->
+<section class="docs-section" id="forms-placeholder-labels">
+
+  <h3 class="title"><a href="#forms-placeholder-labels">文本输入： Placeholder 标签</a></h3>
+
+  <p>
+    在例子里，它将默认100%宽度(左右没有边框)，然后用
+    <code>placeholder</code> 属性去模拟输入框的标签。当用户开始在输入框键入文字时候placeholder标签将会被隐藏。注意下如何 <code>&lt;textarea&gt;</code> 也被用来作为一个多行文本输入框的。
+  </p>
+
+{% highlight html %}
+<div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="First Name">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Last Name">
+  </label>
+  <label class="item item-input">
+    <textarea placeholder="Comments"></textarea>
+  </label>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Placeholder Labels</div>
+    </div>
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name">
+        </label>
+        <label class="item item-input">
+          <textarea placeholder="Comments"></textarea>
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Forms: Inline Labels
+  ================================================== -->
+<section class="docs-section" id="forms-inline-labels">
+
+  <h3 class="title"><a href="#forms-inline-labels">文本输入框：行内标签</a></h3>
+
+  <p>
+    使用<code>input-label</code>来放置一个标签到输入元素的左侧。当用户键入文本标签不会隐藏。注意没有任何阻止你也用一个<code>placeholder</code> 标签。
+  </p>
+
+{% highlight html %}
+<div class="list">
+  <label class="item item-input">
+    <span class="input-label">Username</span>
+    <input type="text">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Password</span>
+    <input type="password">
+  </label>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Inline Labels</div>
+    </div>
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password">
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive">Sign In</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Forms: Stacked Labels
+  ================================================== -->
+<section class="docs-section" id="forms-stacked-labels">
+
+  <h3 class="title"><a href="#forms-stacked-labels">文字输入：叠放的标签</a></h3>
+
+  <p>
+    叠放的标签 总是放置标签到输入框的顶部。每个单项应当指定<code>item-stacked-label</code>,然后输入框的标签应当指定 <code>input-label</code>。
+    这个例子也使用了<code>placeholder</code> 属性这样用户有一个提示输入框要输入什么类型。
+  </p>
+
+{% highlight html %}
+<div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">First Name</span>
+    <input type="text" placeholder="John">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Last Name</span>
+    <input type="text" placeholder="Suhr">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="text" placeholder="john@suhr.com">
+  </label>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Stacked Labels</div>
+    </div>
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">First Name</span>
+          <input type="text" placeholder="John">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Last Name</span>
+          <input type="text" placeholder="Suhr">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Email</span>
+          <input type="text" placeholder="john@suhr.com">
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive">Create Account</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Inset Forms
+  ================================================== -->
+<section class="docs-section" id="inset-forms">
+
+  <h3 class="title"><a href="#inset-forms">内嵌表单</a></h3>
+
+  <p>
+    默认的每个输入单项将会填满父元素（列表）的100%宽度。然而，你可以内嵌列表也通过<code>list list-inset</code> 或者 <code>card</code> 类名。
+    <a href="#cards">card</a> 类名加了一个低的box shadow 而 <a href="#list-inset">list-inset</a> 没有。
+    另外，如果列表的父元素有 <code>padding</code> 那也会给表单一个内嵌的外观。
+  </p>
+
+{% highlight html %}
+<div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" placeholder="First Name">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Last Name">
+  </label>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Inset Forms</div>
+    </div>
+    <div class="content has-header">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name">
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Item Input Inset
+  ================================================== -->
+<section class="docs-section" id="item-input-inset">
+
+  <h3 class="title"><a href="#item-input-inset">内嵌输入</a></h3>
+
+  <p>
+    使用<code>list-inset</code> 将会内嵌整个列表，然而放置<code>item-input-inset</code>
+    将会内嵌一个输入框在一个单独的列表项目中。放置一个按钮在单项中。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Email">
+    </label>
+    <button class="button button-small">
+      Cancel
+    </button>
+  </div>
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Inset Inputs</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="list">
+
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="Email">
+          </label>
+          <button class="button button-small">
+            Submit
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Input Icons
+  ================================================== -->
+<section class="docs-section" id="input-icons">
+
+  <h3 class="title"><a href="#input-icons">输入框图标</a></h3>
+
+  <p>
+    图标可以轻松地添加到一个 <code>item-input</code> 输入框的左侧。简单添加一个
+    <a href="#icons">icon</a> 在<code>&lt;input&gt;</code>前面。默认的图标将会采用label文字的颜色。但是，你也可以使用添加<code>placeholder-icon</code>
+    来给它一个 placeholder 颜色。
+  </p>
+
+{% highlight html %}
+<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Input Icons</div>
+    </div>
+    <div class="content has-header">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search">
+        </label>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Header Inputs
+  ================================================== -->
+<section class="docs-section" id="bar-inputs">
+
+  <h3 class="title"><a href="#bar-inputs">头部输入框</a></h3>
+
+  <p>
+    输入框也可以被放置到头部，同时可以提交或取消表单的按钮。
+  </p>
+
+{% highlight html %}
+<div class="bar bar-header item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios7-search placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+  <button class="button button-clear">
+    Cancel
+  </button>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+      </label>
+      <button class="button button-clear">
+        Cancel
+      </button>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Toggle
+  ================================================== -->
+<section class="docs-section" id="toggle">
+
+  <h3 class="title"><a href="#toggle">切换</a></h3>
+
+  <p>
+    一个切换技术上和一个HTML 单选框一样，除了它看上去不一样并在触摸设备上更容易使用。Ionic更愿意包裹 <code>&lt;label&gt;</code>在单选框上为了让整个切换更容易触摸或拖放。
+  </p>
+  <p>
+    切换也可以分配 <a href="#colors">colors</a> 给他们，,
+    比如 <code>toggle-assertive</code> 来指定 assertive 颜色。
+  </p>
+
+{% highlight html %}
+<label class="toggle">
+   <input type="checkbox">
+   <div class="track">
+     <div class="handle"></div>
+   </div>
+</label>
+{% endhighlight %}
+
+  <p>
+    这是一个多个切换在一个列表中的例子。注意 <code>item-toggle</code>
+    加到了每个<code>item</code>单项上了。
+  </p>
+
+{% highlight html %}
+<ul class="list">
+
+  <li class="item item-toggle">
+     HTML5
+     <label class="toggle toggle-assertive">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+
+  ...
+
+</ul>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Toggle</div>
+    </div>
+    <div class="content has-header">
+
+      <ul class="list">
+        <li class="item item-toggle">
+           HTML5
+           <label class="toggle toggle-positive">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           CSS3
+           <label class="toggle toggle-calm">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Flashplayer
+           <label class="toggle toggle-balanced">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Java Applets
+           <label class="toggle toggle-energized">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           JavaScript
+           <label class="toggle toggle-assertive">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Silverlight
+           <label class="toggle toggle-royal">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+        <li class="item item-toggle">
+           Web 组件
+           <label class="toggle toggle-dark">
+             <input type="checkbox" checked>
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Checkbox
+  ================================================== -->
+<section class="docs-section" id="checkbox">
+
+  <h3 class="title"><a href="#checkbox">单选框</a></h3>
+
+  <p>
+    一个单选框技术上和一个HTML 单选框一样，除了它看上去不一样并在触摸设备上更容易使用。Ionic更愿意包裹 <code>&lt;label&gt;</code>在单选框上为了让整个切换更容易触摸或拖放。
+  </p>
+  <p>
+    单选框也可以分配 <a href="#colors">colors</a> 给他们，,
+    比如 <code>toggle-assertive</code> 来指定 assertive 颜色。
+  </p>
+
+{% highlight html %}
+<ul class="list">
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     Flux Capacitor
+  </li>
+
+  ...
+
+</ul>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Checkbox</div>
+    </div>
+
+    <div class="content has-header">
+
+      <ul class="list">
+        <li class="item item-checkbox">
+           <label class="checkbox">
+             <input type="checkbox" checked>
+           </label>
+           Flux Capacitor
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox">
+             <input type="checkbox" checked>
+           </label>
+           1.21 Gigawatts
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox">
+             <input type="checkbox" checked>
+           </label>
+           Delorean
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox">
+             <input type="checkbox" checked>
+           </label>
+           88 MPH
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox">
+             <input type="checkbox">
+           </label>
+           Plutonium Resupply
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- Radio Buttons
+  ================================================== -->
+<section class="docs-section" id="radio-buttons">
+
+  <h3 class="title"><a href="#radio-buttons">单选项按钮列表</a></h3>
+
+  <p>
+    单选项按钮和标准的单选项元素使用上一直。按照下面的转换将会显示一个单选项按钮列表就像在经典应用中。
+  </p>
+  <p>
+    每个 <code>item-radio</code>必须有一个单选项有着同样输入框<code>name</code> 属性。
+     <code>radio-icon</code> 类名用来指定什么时候显示和隐藏图标元素。
+  </p>
+  <p>
+    Ionic更愿意使用 <code>&lt;label&gt;</code> 元素给一个单选项来使整个区域可触摸。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+  <label class="item item-radio">
+    <input type="radio" name="group">
+    <div class="item-content">
+      Go
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  ...
+
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Radio Button List</div>
+    </div>
+
+    <div class="content has-header">
+
+      <div class="list">
+
+        <label class="item item-radio">
+          <input type="radio" name="group" value="go" checked="checked">
+          <div class="item-content">
+            Go
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+        <label class="item item-radio">
+          <input type="radio" name="group" value="python">
+          <div class="item-content">
+            Python
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+        <label class="item item-radio">
+          <input type="radio" name="group" value="ruby">
+          <div class="item-content">
+            Ruby
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+        <label class="item item-radio">
+          <input type="radio" name="group" value=".net">
+          <div class="item-content">
+            .Net
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+        <label class="item item-radio">
+          <input type="radio" name="group" value="java">
+          <div class="item-content">
+            Java
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+        <label class="item item-radio">
+          <input type="radio" name="group" value="php">
+          <div class="item-content">
+            PHP
+          </div>
+          <i class="radio-icon ion-checkmark"></i>
+        </label>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- Range
+  ================================================== -->
+<section class="docs-section" id="range">
+
+  <h3 class="title"><a href="#range">范围</a></h3>
+
+  <p>
+    这是一个范围。范围类型可以被主题画到任何Ionic默认颜色，然后用于丰富的元素上比如一个列表项或卡片。
+  </p>
+
+{% highlight html %}
+<div class="range">
+  <i class="icon ion-volume-low"></i>
+  <input type="range" name="volume">
+  <i class="icon ion-volume-high"></i>
+</div>
+
+<div class="list">
+  <div class="item range range-positive">
+    <i class="icon ion-ios7-sunny-outline"></i>
+    <input type="range" name="volume" min="0" max="100" value="33">
+    <i class="icon ion-ios7-sunny"></i>
+  </div>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Range</div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content has-header padding-top">
+
+        <div class="range">
+          <i class="icon ion-volume-low"></i>
+          <input type="range" name="volume">
+          <i class="icon ion-volume-high"></i>
+        </div>
+
+        <div class="list" style="margin-top: 30px">
+          <div class="item item-divider">
+            Ranges In A List
+          </div>
+          <div class="item range range-positive">
+            <i class="icon ion-ios7-sunny-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="12">
+            <i class="icon ion-ios7-sunny"></i>
+          </div>
+          <div class="item range range-calm">
+            <i class="icon ion-ios7-lightbulb-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="25">
+            <i class="icon ion-ios7-lightbulb"></i>
+          </div>
+          <div class="item range range-balanced">
+            <i class="icon ion-ios7-bolt-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="38">
+            <i class="icon ion-ios7-bolt"></i>
+          </div>
+          <div class="item range range-energized">
+            <i class="icon ion-ios7-moon-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="50">
+            <i class="icon ion-ios7-moon"></i>
+          </div>
+          <div class="item range range-assertive">
+            <i class="icon ion-ios7-partlysunny-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="63">
+            <i class="icon ion-ios7-partlysunny"></i>
+          </div>
+          <div class="item range range-royal">
+            <i class="icon ion-ios7-rainy-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="75">
+            <i class="icon ion-ios7-rainy"></i>
+          </div>
+          <div class="item range range-dark">
+            <i class="icon ion-ios7-lightbulb-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="88">
+            <i class="icon ion-ios7-lightbulb"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Select
+  ================================================== -->
+<section class="docs-section" id="select">
+
+  <h3 class="title"><a href="#select">Select</a></h3>
+
+  <p>
+    Ionic的 select是样式过了，因此它的外观没花过相对于原生浏览器默认样式来说。但是当select元素打开后，默认的行为关于如何选择一个选项仍然是 浏览器管理。
+  </p>
+
+  <p>
+    每个平台的用户界面将不一样当用户正在选择一个选项时。举个例子，在桌面浏览器你将看到传统的下拉界面，在Android上经常是一个有着radio-button的弹出列表，然后ios上是有给i定制过的滚动覆盖窗口半个底部。
+  </p>
+
+{% highlight html %}
+<div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Lightsaber
+    </div>
+    <select>
+      <option>Blue</option>
+      <option selected>Green</option>
+      <option>Red</option>
+    </select>
+  </label>
+
+</div>
+
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Select</div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content has-header">
+
+        <div class="list">
+
+          <div class="item item-input item-select">
+            <div class="input-label">
+              Lightsaber
+            </div>
+            <select>
+              <option>Blue</option>
+              <option selected>Green</option>
+              <option>Red</option>
+            </select>
+          </div>
+
+          <div class="item item-input item-select">
+            <div class="input-label">
+              Fighter
+            </div>
+            <select>
+              <option>ARC-170</option>
+              <option>A-wing</option>
+              <option>Delta-7</option>
+              <option>Naboo N-1</option>
+              <option>TIE</option>
+              <option selected>X-wing</option>
+              <option>Y-wing</option>
+            </select>
+          </div>
+
+          <div class="item item-input item-select">
+            <div class="input-label">
+              Droid
+            </div>
+            <select>
+              <option>2-1B</option>
+              <option>B1</option>
+              <option>C-3PO</option>
+              <option>IG-88</option>
+              <option>IT-O</option>
+              <option selected>R2-D2</option>
+            </select>
+          </div>
+
+          <div class="item item-input item-select">
+            <div class="input-label">
+              Planet
+            </div>
+            <select>
+              <option>Alderaan</option>
+              <option selected>Dagobah</option>
+              <option>Felucia</option>
+              <option>Geonosis </option>
+              <option>Hoth</option>
+              <option>Kamino</option>
+              <option>Mygeeto</option>
+              <option>Naboo</option>
+              <option>Tataouine</option>
+              <option>Utapau</option>
+              <option>Yavin</option>
+            </select>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Tabs
+  ================================================== -->
+<section class="docs-section" id="tabs">
+
+  <h3 class="title"><a href="#tabs">Tabs</a></h3>
+
+  <p>
+    Tabs 是一个按钮或链接的水平区域允许屏幕上的一个持续导航体验。它可以包含任何文字和图标的组合，是一个启用移动导航的流行发式。
+  </p>
+  <p class="advanced-panel">
+    <em>*</em> 为了绑定标签化的界面，参见
+    <a href="/docs/angularjs/controllers/tab-bar/">Tabs Controller</a> 文档。
+  </p>
+  <p>
+    包含的元素应当有<code>tabs</code> 类名，每个tab应当有 <code>tab-item</code> 类名。默认的，tab将会没有图标只有文字。
+  </p>
+
+{% highlight html %}
+<div class="tabs">
+  <a class="tab-item">
+    Home
+  </a>
+  <a class="tab-item">
+    Favorites
+  </a>
+  <a class="tab-item">
+    Settings
+  </a>
+</div>
+{% endhighlight %}
+
+  <p>
+    Tabs 可以被样式化来匹配标准的Ionic颜色 例子用的 <code>default</code> 颜色。使用下面类名来改变tab 条的颜色：
+    <code>tabs-default</code>
+    <code>tabs-secondary</code>
+    <code>tabs-primary</code>
+    <code>tabs-info</code>
+    <code>tabs-success</code>
+    <code>tabs-warning</code>
+    <code>tabs-danger</code>
+    <code>tabs-dark</code>
+  </p>
+
+  <p>
+    要隐藏tabbar但是仍然显示内容，添加 <code>tabs-item-hide</code> 类名。
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Tabs</div>
+    </div>
+    <div class="tabs">
+      <a class="tab-item" href="#">
+        Home
+      </a>
+      <a class="tab-item" href="#">
+        Favorites
+      </a>
+      <a class="tab-item" href="#">
+        Settings
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Icon Only Tabs
+  ================================================== -->
+<section class="docs-section" id="icon-only-tabs">
+
+  <h3 class="title"><a href="#icon-only-tabs">只有图标的Tabs</a></h3>
+
+  <p>
+    添加 <code>tabs-icon-only</code> 在 <code>tabs</code> 类名后。
+  </p>
+
+{% highlight html %}
+<div class="tabs tabs-icon-only">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+  </a>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Icon-only Tabs</div>
+    </div>
+    <div class="tabs tabs-icon-only">
+      <a class="tab-item" href="#">
+        <i class="icon ion-home"></i>
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Top Icon Tabs
+  ================================================== -->
+<section class="docs-section" id="icon-top-tabs">
+
+  <h3 class="title"><a href="#icon-top-tabs">图标在上方的Tabs</a></h3>
+
+  <p>
+    经典标签。添加 <code>tabs-icon-top</code> 在<code>tabs</code> 类名后。
+  </p>
+
+{% highlight html %}
+<div class="tabs tabs-icon-top">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+    Home
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+    Favorites
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+    Settings
+  </a>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Top Icon Tabs</div>
+    </div>
+    <div class="tabs tabs-icon-top">
+      <a class="tab-item" href="#">
+        <i class="icon ion-home"></i>
+        Home
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+        Favorites
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+        Settings
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Left Icon Tabs
+  ================================================== -->
+<section class="docs-section" id="icon-left-tabs">
+
+  <h3 class="title"><a href="#icon-left-tabs">左侧图标Tabs</a></h3>
+
+  <p>
+    添加 <code>tabs-icon-left</code> 在<code>tabs</code>类名后。
+  </p>
+
+{% highlight html %}
+<div class="tabs tabs-icon-left">
+  <a class="tab-item">
+    <i class="icon ion-home"></i>
+    Home
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+    Favorites
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+    Settings
+  </a>
+</div>
+{% endhighlight %}
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Left Icon Tabs</div>
+    </div>
+    <div class="tabs tabs-icon-left">
+      <a class="tab-item" href="#">
+        <i class="icon ion-home"></i>
+        Home
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+        Favorites
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+        Settings
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Grid
+  ================================================== -->
+<section class="docs-section" id="grid">
+
+  <h3 class="title"><a href="#grid">网格</a></h3>
+
+  <p>
+    Ionic's 网格系统不同于大多数因为使用了<a href="http://www.w3.org/TR/css3-flexbox/">CSS Flexible Box Layout Module</a> 标准。
+    优势是Ionic支持的设备，都支持 <a href="http://caniuse.com/flexbox">flexbox</a>.
+  </p>
+
+  <p>
+    简单的在一行内添加列，然后他们将均匀地占用可用空间。如果你想三列，添加三列，如果你想五列，添加五列。这里没有严格的12列网格，或者 明确说明每列应当多大。更要命的是，你可以每列水平居中内容。
+  </p>
+
+  <p>
+    使用<code>row</code> 类名指定，惊喜吧，一行，然后 <code>col</code> 用来指定一列。在右边的例子中我们选择了4列，然后是2列，但是我们也可以轻松的用 3, 6, 7, 23, 等等.，那不重要。关键是增加你的布局依赖列的数字不用担心要指定百分比，因为自动指定了。
+  </p>
+
+  <p>
+     <em>注意:例子中边框和灰色背景是手动添加的，这样更容易看清结构。</em>
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Grid</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-50">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col col-25 col-offset-25">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">Line 1</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">Line 1<br>Line 2<br>Line 3</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-top">
+          <div class="col-demo">Line 1</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">Line 1<br>Line 2<br>Line 3</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-center">
+          <div class="col-demo">Line 1</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">Line 1<br>Line 2<br>Line 3</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-bottom">
+          <div class="col-demo">Line 1</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">Line 1<br>Line 2<br>Line 3</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Grid: Evenly Spaced Columns
+  ================================================== -->
+<section class="docs-section" id="grid-even">
+
+  <h3 class="title"><a href="#grid-even">网格：平局空间列</a></h3>
+
+  <p>
+    默认的每个 <code>col</code> 添加到一个 <code>row</code> 将会自动接收一个可用区域的等量部分。注意在下面的代码中没有指定任何尺寸的类名，然而，5列中的每个将会占用可用宽的20%（感谢flexbox）.
+  </p>
+
+{% highlight html %}
+<div class="row">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+</div>
+{% endhighlight %}
+
+  <p>
+     <em>注意:例子中边框和灰色背景是手动添加的，这样更容易看清结构。</em>
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Evenly Spaced Columns</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Grid: Explicit Column Sizes
+  ================================================== -->
+<section class="docs-section" id="grid-explicit">
+
+  <h3 class="title"><a href="#grid-explicit">网格： 明确的列尺寸</a></h3>
+  <p>
+    你 <em>可以</em> 明确声明一个列的尺寸比如你想指定一列比同行中其他的大（宽度上）。默认1的每一列将会均匀的占有可用空间，但是也有情况一列要有固定尺寸，Ionic的网格使用一个百分比系统(相对于锁定在12列网格)。
+  </p>
+  <p>
+    这种网格系统的一个优势是你只需要声明列表所需的百分比，其他列仍然将均匀的分割可用区域。
+  </p>
+
+
+{% highlight html %}
+<div class="row">
+  <div class="col col-50">.col.col-50</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+</div>
+
+<div class="row">
+  <div class="col col-75">.col.col-75</div>
+  <div class="col">.col</div>
+</div>
+
+<div class="row">
+  <div class="col">.col</div>
+  <div class="col col-75">.col.col-75</div>
+</div>
+
+<div class="row">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+</div>
+{% endhighlight %}
+
+  <p>
+     <em>注意:例子中边框和灰色背景是手动添加的，这样更容易看清结构。</em>
+  </p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th colspan="2">
+          明确的列表百分比类名
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>.col-10</th>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <th>.col-20</th>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <th>.col-25</th>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <th>.col-33</th>
+        <td>33.3333%</td>
+      </tr>
+      <tr>
+        <th>.col-50</th>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <th>.col-67</th>
+        <td>66.6666%</td>
+      </tr>
+      <tr>
+        <th>.col-75</th>
+        <td>75%</td>
+      </tr>
+      <tr>
+        <th>.col-80</th>
+        <td>80%</td>
+      </tr>
+      <tr>
+        <th>.col-90</th>
+        <td>90%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Explicit Column Sizes</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="row">
+        <div class="col col-50">
+          <div class="col-demo">.col.col-50</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-75">
+          <div class="col-demo">.col.col-75</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col col-75">
+          <div class="col-demo">.col.col-75</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Grid: Offset Columns
+  ================================================== -->
+<section class="docs-section" id="grid-offset">
+
+  <h3 class="title"><a href="#grid-offset">网格：偏移列表</a></h3>
+  <p>
+    列也可以相对于左偏移。我们让例子和代码自己解释。
+  </p>
+
+
+{% highlight html %}
+<div class="row">
+  <div class="col col-33 col-offset-33">.col</div>
+  <div class="col">.col</div>
+</div>
+
+<div class="row">
+  <div class="col col-33">.col</div>
+  <div class="col col-33 col-offset-33">.col</div>
+</div>
+
+<div class="row">
+  <div class="col col-33 col-offset-67">.col</div>
+</div>
+{% endhighlight %}
+
+  <p>
+     <em>注意:例子中边框和灰色背景是手动添加的，这样更容易看清结构。</em>
+  </p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th colspan="2">
+          偏移列表百分比类名
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>.col-offset-10</th>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-20</th>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-25</th>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-33</th>
+        <td>33.3333%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-50</th>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-67</th>
+        <td>66.6666%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-75</th>
+        <td>75%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-80</th>
+        <td>80%</td>
+      </tr>
+      <tr>
+        <th>.col-offset-90</th>
+        <td>90%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Offset Columns</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="row">
+        <div class="col col-33 col-offset-33">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-33">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col col-33 col-offset-33">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-33 col-offset-67">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Grid: Vertically Aligned Columns
+  ================================================== -->
+<section class="docs-section" id="grid-vertically-align">
+
+  <h3 class="title"><a href="#grid-vertically-align">网格：垂直对齐网格</a></h3>
+  <p>
+    另一个技巧了撸flexbox的袖子是能够方便地垂直
+    对齐列。垂直取向包括：顶部，中部和底部，并且可以适用于在一排的每一列，或到特定的列。
+  </p>
+  <p>
+    在例子中，我们已经使每行的最后一列有最高的内容来演示其他的内容如何垂直居中的。第一行演示了默认其他列会和同行中最高列同高。
+  </p>
+
+{% highlight html %}
+<div class="row">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">1<br>2<br>3<br>4</div>
+</div>
+
+<div class="row">
+  <div class="col col-top">.col</div>
+  <div class="col col-center">.col</div>
+  <div class="col col-bottom">.col</div>
+  <div class="col">1<br>2<br>3<br>4</div>
+</div>
+
+<div class="row row-top">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">1<br>2<br>3<br>4</div>
+</div>
+
+<div class="row row-center">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">1<br>2<br>3<br>4</div>
+</div>
+
+<div class="row row-bottom">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">1<br>2<br>3<br>4</div>
+</div>
+{% endhighlight %}
+
+  <p>
+     <em>注意:例子中边框和灰色背景是手动添加的，这样更容易看清结构。</em>
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Vertically Aligned Columns</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="row">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">1<br>2<br>3<br>4</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-top">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col col-center">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col col-bottom">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">1<br>2<br>3<br>4</div>
+        </div>
+      </div>
+
+      <div class="row row-top">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">1<br>2<br>3<br>4</div>
+        </div>
+      </div>
+
+      <div class="row row-center">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">1<br>2<br>3<br>4</div>
+        </div>
+      </div>
+
+      <div class="row row-bottom">
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col">
+          <div class="col-demo">1<br>2<br>3<br>4</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Responsive Grid
+  ================================================== -->
+<section class="docs-section" id="grid-responsive">
+
+  <h3 class="title"><a href="#grid-responsive">响应式网格</a></h3>
+  <p>
+    有情况列中的一行将不会很好的适应可用区域。响应式类名可以用来在它自己行的固定断点时转换每一列成一行。
+  </p>
+  <p>
+    举个例子，如果你想要在viewport非常小的时候一行中的所有列转换成堆叠的行时，你将使用<code>.responsive-sm</code> 类名。右边的例子就是模拟它将是什么样字的效果。
+  </p>
+
+{% highlight html %}
+<div class="row responsive-sm">
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+  <div class="col">.col</div>
+</div>
+{% endhighlight %}
+
+  <p>
+     <em>注意:例子中边框和灰色背景是手动添加的，这样更容易看清结构。</em>
+  </p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>
+          响应式类名
+        </th>
+        <th>
+          大致打断的情形
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>.responsive-sm</th>
+        <td>Smaller than landscape phone</td>
+      </tr>
+      <tr>
+        <th>.responsive-md</th>
+        <td>Smaller than portrait tablet</td>
+      </tr>
+      <tr>
+        <th>.responsive-lg</th>
+        <td>Smaller than landscape tablet</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    要更多配置，每个类名使用了一个<a href="/tutorials/customizing-ionic-with-sass/">Sass</a>
+    变量可以变成你喜欢的。这也有一个 <code>responsive-grid-break</code>混合 你可以用来创造自己的类名。
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Responsive Grid</div>
+    </div>
+    <div class="content has-header">
+
+      <div class="row responsive-break">
+        <div class="col" style="width: 100%">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col" style="width: 100%">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col" style="width: 100%">
+          <div class="col-demo">.col</div>
+        </div>
+        <div class="col" style="width: 100%">
+          <div class="col-demo">.col</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- Utility
+  ================================================== -->
+<section class="docs-section" id="utility">
+
+  <h2><a href="#utility">工具</a></h2>
+
+  <p>
+    Ionic自带了一可用的工具类名来帮助你快速美化你的设计。每一个都是可选的。
+  </p>
+
+</section>
+
+
+
+<!-- Colors
+  ================================================== -->
+<section class="docs-section" id="colors">
+
+  <h3 class="title"><a href="#colors">颜色</a></h3>
+
+  <p>
+    Ionic 自带一组颜色来上手，但是通常 <strong>颜色就是要被覆写的</strong>。我们更愿意说Ionic为你的颜色、色板、主题提供了一套推荐的命名转换。
+  </p>
+
+  <p>
+    工具颜色添加了用来帮助设定命名转换。你可以注意Ionic故意没有使用单词像 "red"或 "blue"，而是有代表一种情感或通用的主题颜色的方式命名。
+  </p>
+
+  <p>
+   让我们实际点，指定颜色是在CSS中比较容易的任务之一，而每个应用程序将有颜色不同的要求。Ionic的目标是提供一个干净的系统基础之上构建和维护，并保持远离要求了每个应用程序选择的颜色定制设计。
+  </p>
+
+  <p>
+    要定制颜色你可以简单覆写那些在<code>ionic.css</code> CSS文件中的样式。另外，既然 Ionic 是用<a href="http://sass-lang.com/">Sass</a>编译的,要更强大和灵活的你也可以 在 <code>_variables.scss</code>文件中<a href="/tutorials/customizing-ionic-with-sass/">修改和扩展颜色变量</a> 。
+  </p>
+
+  <p class="advanced-panel">
+    <em>*</em> 要更灵活，你可以 <a href="/tutorials/customizing-ionic-with-sass/">用Sass定制Ionic</a>
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Utility Colors</div>
+    </div>
+    <div class="content has-header">
+
+      <ul class="list color-list-demo">
+        <li class="item dark">
+          light
+          <span class="color-demo light-bg light-border"></span>
+        </li>
+        <li class="item stable-dark">
+          stable
+          <span class="color-demo stable-bg stable-border"></span>
+        </li>
+        <li class="item positive">
+          positive
+          <span class="color-demo positive-bg positive-border"></span>
+        </li>
+        <li class="item calm">
+          calm
+          <span class="color-demo calm-bg calm-border"></span>
+        </li>
+        <li class="item balanced">
+          balanced
+          <span class="color-demo balanced-bg balanced-border"></span>
+        </li>
+        <li class="item energized">
+          energized
+          <span class="color-demo energized-bg energized-border"></span>
+        </li>
+        <li class="item assertive">
+          assertive
+          <span class="color-demo assertive-bg assertive-border"></span>
+        </li>
+        <li class="item royal">
+          royal
+          <span class="color-demo royal-bg royal-border"></span>
+        </li>
+        <li class="item dark">
+          dark
+          <span class="color-demo dark-bg dark-border"></span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Icons
+  ================================================== -->
+<section class="docs-section" id="icons">
+
+  <h3 class="title"><a href="#icons">图标</a></h3>
+
+  <p>
+    图标也是自带的通过自己免费开源的图标字体，<a href="http://ionicons.com/">Ionicons</a>, 超过500个图标可以选择。
+  </p>
+
+  <p>
+    简单的添加 <code>icon</code> 和要显示的Ionicon类名，可以被轻松的在<a href="http://ionicons.com/">Ionicons</a> 主页上找到。
+  </p>
+
+{% highlight html %}
+<i class="icon ion-star"></i>
+{% endhighlight %}
+
+  <p>
+    尽管在按钮上使用一个子级<code>&lt;i&gt;</code> 来设置图标，也可以设置按钮的类名来设置按钮的图标。请看下 <a href="#icon-buttons">按钮图标文档</a>来了解更多信息。
+  </p>
+
+  <p>
+    注意： Ionic 肯定不限制只能使用 Ionicons 图标包，请自由的使用你想要的图标。
+  </p>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Ionicons</div>
+    </div>
+    <div class="content has-header padding">
+
+      <ul class="ionicons-demo">
+        <li class="ion-ionic" data-pack="default" data-tags="badass, framework, sexy, hawt"></li>
+        <li class="ion-arrow-up-a" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-right-a" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-down-a" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-left-a" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-up-b" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-right-b" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-down-b" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-left-b" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-up-c" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-right-c" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-down-c" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-left-c" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-return-right" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-return-left" data-pack="default" data-tags=""></li>
+        <li class="ion-arrow-swap" data-pack="default" data-tags="switch, flip"></li>
+        <li class="ion-arrow-shrink" data-pack="default" data-tags="pinch"></li>
+        <li class="ion-arrow-expand" data-pack="default" data-tags="fullscreen"></li>
+        <li class="ion-arrow-move" data-pack="default" data-tags="drag"></li>
+        <li class="ion-arrow-resize" data-pack="default" data-tags="drag"></li>
+        <li class="ion-chevron-up" data-pack="default" data-tags="arrow, up"></li>
+        <li class="ion-chevron-right" data-pack="default" data-tags="arrow, right"></li>
+        <li class="ion-chevron-down" data-pack="default" data-tags="arrow, down"></li>
+        <li class="ion-chevron-left" data-pack="default" data-tags="arrow, left"></li>
+        <li class="ion-log-in" data-pack="default" data-tags="sign in, "></li>
+        <li class="ion-log-out" data-pack="default" data-tags="sign out"></li>
+        <li class="ion-checkmark-round" data-pack="default" data-tags="complete, finished, success, on"></li>
+        <li class="ion-checkmark" data-pack="default" data-tags="complete, finished, success, on"></li>
+        <li class="ion-checkmark-circled" data-pack="default" data-tags="complete, finished, success, on"></li>
+        <li class="ion-close-round" data-pack="default" data-tags="delete, trash, kill, x"></li>
+        <li class="ion-close" data-pack="default" data-tags="delete, trash, kill, x"></li>
+        <li class="ion-close-circled" data-pack="default" data-tags="delete, trash, kill, x"></li>
+        <li class="ion-plus-round" data-pack="default" data-tags="add, include, new, invite, +"></li>
+        <li class="ion-plus" data-pack="default" data-tags="add, include, new, invite, +"></li>
+        <li class="ion-plus-circled" data-pack="default" data-tags="add, include, new, invite, +"></li>
+        <li class="ion-minus-round" data-pack="default" data-tags="hide, remove, minimize, -"></li>
+        <li class="ion-minus" data-pack="default" data-tags="hide, remove, minimize, -"></li>
+        <li class="ion-minus-circled" data-pack="default" data-tags="hide, remove, minimize, -"></li>
+        <li class="ion-information" data-pack="default" data-tags="help, more, tooltip"></li>
+        <li class="ion-information-circled" data-pack="default" data-tags="help, more, tooltip"></li>
+        <li class="ion-help" data-pack="default" data-tags="question, ?"></li>
+        <li class="ion-help-circled" data-pack="default" data-tags="question, ?"></li>
+        <li class="ion-help-buoy" data-pack="default" data-tags="question, ?"></li>
+        <li class="ion-alert" data-pack="default" data-tags="attention, warning, notice, !, exclamation"></li>
+        <li class="ion-alert-circled" data-pack="default" data-tags="attention, warning, notice, !, exclamation"></li>
+        <li class="ion-refresh" data-pack="default" data-tags="reload, renew"></li>
+        <li class="ion-loop" data-pack="default" data-tags="refresh"></li>
+        <li class="ion-shuffle" data-pack="default" data-tags="random"></li>
+        <li class="ion-home" data-pack="default" data-tags="house"></li>
+        <li class="ion-search" data-pack="default" data-tags="magnifying glass"></li>
+        <li class="ion-flag" data-pack="default" data-tags="favorite, mark, star"></li>
+        <li class="ion-star" data-pack="default" data-tags="favorite"></li>
+        <li class="ion-heart" data-pack="default" data-tags="love"></li>
+        <li class="ion-gear-a" data-pack="default" data-tags="settings, options, cog"></li>
+        <li class="ion-gear-b" data-pack="default" data-tags="settings, options, cog"></li>
+        <li class="ion-settings" data-pack="default" data-tags="options, tools"></li>
+        <li class="ion-wrench" data-pack="default" data-tags="settings, options, tools"></li>
+        <li class="ion-hammer" data-pack="default" data-tags="settings, options, tools"></li>
+        <li class="ion-trash-a" data-pack="default" data-tags="delete, remove, dump"></li>
+        <li class="ion-trash-b" data-pack="default" data-tags="delete, remove, dump"></li>
+        <li class="ion-navicon-round" data-pack="default" data-tags="menu, hamburger, slide menu"></li>
+        <li class="ion-navicon" data-pack="default" data-tags="menu, hamburger, slide menu"></li>
+        <li class="ion-drag" data-pack="default" data-tags="reorder, move, drag"></li>
+        <li class="ion-document" data-pack="default" data-tags="paper, file"></li>
+        <li class="ion-document-text" data-pack="default" data-tags="paper, file"></li>
+        <li class="ion-clipboard" data-pack="default" data-tags="write"></li>
+        <li class="ion-bookmark" data-pack="default" data-tags="favorite, tag, save"></li>
+        <li class="ion-email" data-pack="default" data-tags="snail, mail"></li>
+        <li class="ion-folder" data-pack="default" data-tags="snail, mail"></li>
+        <li class="ion-filing" data-pack="default" data-tags="mail"></li>
+        <li class="ion-archive" data-pack="default" data-tags="mail"></li>
+        <li class="ion-reply" data-pack="default" data-tags="mail, undo"></li>
+        <li class="ion-reply-all" data-pack="default" data-tags="mail"></li>
+        <li class="ion-forward" data-pack="default" data-tags="mail, redo"></li>
+        <li class="ion-share" data-pack="default" data-tags="outbound"></li>
+        <li class="ion-link" data-pack="default" data-tags="chain, anchor, href, attach"></li>
+        <li class="ion-paperclip" data-pack="default" data-tags="attach"></li>
+        <li class="ion-compose" data-pack="default" data-tags="write, compose, type"></li>
+        <li class="ion-briefcase" data-pack="default" data-tags="store, organize"></li>
+        <li class="ion-medkit" data-pack="default" data-tags="health"></li>
+        <li class="ion-at" data-pack="default" data-tags="@"></li>
+        <li class="ion-pound" data-pack="default" data-tags="hashtag, #"></li>
+        <li class="ion-cloud" data-pack="default" data-tags="storage"></li>
+        <li class="ion-upload" data-pack="default" data-tags="storage, cloud"></li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Padding
+  ================================================== -->
+<section class="docs-section" id="padding">
+
+  <h3 class="title"><a href="#padding">内边距</a></h3>
+
+  <p>
+    Ionic的许多组件都有意将padding 和 margin 重置到了0.
+    许多情况下应用将会组件全屏，初始化时每个组件都是0边距开发者可以轻松控制应用中组件的padding 和 margins。
+  </p>
+  <p>
+    <code>padding</code> 工具类名可以被重用来给任何元素内容一些可喘息空间，同时默认在元素外框和内部内容间添加了一个<code>15px</code> 空隙。
+    下面的类名不被强制使用在任意元素上，但是也许对你的布局有帮助、
+  </p>
+  <ul>
+    <li>
+      <code>padding</code> 每边添加 padding 。
+    </li>
+    <li>
+      <code>padding-vertical</code> 添加顶部和底部 padding 。
+    </li>
+    <li>
+      <code>padding-horizontal</code> 左右添加 padding 。
+    </li>
+    <li>
+      <code>padding-top</code>添加顶部 padding 。
+    </li>
+    <li>
+      <code>padding-right</code> 添加右部 padding 。
+    </li>
+    <li>
+      <code>padding-bottom</code> 添加底部  padding 。
+    </li>
+    <li>
+      <code>padding-left</code> 添加左侧 padding 。
+    </li>
+  </ul>
+
+  <div class="doc-example ionic">
+    <div class="bar bar-header">
+      <div class="h1 title">Padding</div>
+    </div>
+    <div class="content has-header padding">
+
+      <div class="padding-example">
+        <div></div>
+      </div>
+
+      <p style="margin:0 24px">
+        当应用了<code>padding</code> 灰色方块代表一个元素，蓝色方块代表了代表了元素的内容。
+
+      </p>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- Animations
+  ================================================== -->
+<section class="docs-section" id="animations">
+  <h3 class="title"><a href="#animations">动画</a></h3>
+
+  <p>
+    在Ionic中，特别是和 AngularJS 一起，你可以使用动画。我们预定了几个你可以使用的动画类名。你也可以创建自己的。
+  </p>
+  <ul>
+    <li>
+      <code>fade-in</code>
+    </li>
+    <li>
+      <code>nav-title-slide-ios7</code>
+    </li>
+    <li>
+      <code>no-animation</code>
+    </li>
+    <li>
+      <code>reverse</code>
+    </li>
+    <li>
+      <code>slide-in-left</code>
+    </li>
+    <li>
+      <code>slide-in-right</code>
+    </li>
+    <li>
+      <code>slide-in-up</code>
+    </li>
+    <li>
+      <code>slide-left-right-ios7</code>
+    </li>
+    <li>
+      <code>slide-left-right</code>
+    </li>
+    <li>
+      <code>slide-out-left</code>
+    </li>
+    <li>
+      <code>slide-out-right</code>
+    </li>
+    <li>
+      <code>slide-right-left-ios7</code>
+    </li>
+    <li>
+      <code>slide-right-left</code>
+    </li>
+</section>

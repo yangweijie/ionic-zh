@@ -1,0 +1,123 @@
+---
+layout: default
+title: 开始使用Ionic
+body_css: getting-started-page
+header_title: 开始使用Ionic
+header_sub_title: 用你知道和热爱的web技术更快地创建移动应用。
+active: getting-started
+news: Questions? Head over to our <a href="http://forum.ionicframework.com/">Community Forum</a> to chat with others using the framework.
+pre_footer: true
+---
+
+<!--<iframe style="display: block; margin: 10px auto 80px auto;" src="//player.vimeo.com/video/86064716" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+
+<div id="getting-started">
+  <div class="text-center">
+    <h2>开始通过Ionic创建!</h2>
+    <p class="sub-heading">
+      按照下面的快速步骤然后开始几分钟内创建高质量移动应用。为了更深入的概述，请观看我们的 <a href="https://www.youtube.com/watch?v=C-UwOWB9Io4&feature=youtu.be" target="_blank">速成班视频</a>， 它涵盖一切你想要知道的。
+    </p>
+  </div>
+  <div class="row" id="first-step">
+    <div class="col-md-6 step-desc">
+      <div class="num">
+        <img src="/img/docs/symbols/step-1@2x.png" width="52" height="52">
+      </div>
+      <div class="desc">
+        <h3>安装 Ionic</h3>
+        <p>
+        首先，安装 <a href="http://nodejs.org/">Node.js</a>。然后安装最新版Cordova 和Ionic <a href="https://npmjs.org/package/ionic">命令行工具</a>. 按照 <a href="http://cordova.apache.org/docs/en/3.3.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide">Android</a> and <a href="http://cordova.apache.org/docs/en/3.3.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide">iOS</a> 平台指南来安装所需平台依赖。
+        </p>
+        <p>
+        <i>注意：iOS 开发需要 Mac OS X.</i>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 code">
+{% highlight bash %}
+
+$ npm install -g cordova ionic
+
+
+{% endhighlight %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 step-desc">
+      <div class="num">
+        <img src="/img/docs/symbols/step-2@2x.png" width="52" height="52">
+      </div>
+      <div class="desc">
+        <h3>开始一个项目</h3>
+        <p>
+          用我们的现成的应用中的一个来创建一个项目 Ionic或者一个空白模板重新开始
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 code">
+  {% highlight bash %}
+
+  $ ionic start myApp tabs
+  {% endhighlight %}
+    </div>
+  </div>
+  <div class="row" id="template-images">
+    <div class="template">
+      <div class="template-image" id="start-template-blank-image"></div>
+      <code>$ ionic start myApp blank</code>
+    </div>
+    <div class="template">
+      <div class="template-image" id="start-template-tabs-image"></div>
+      <code>$ ionic start myApp tabs</code>
+    </div>
+    <div class="template">
+      <div class="template-image" id="start-template-sidemenu-image"></div>
+      <code>$ ionic start myApp sidemenu</code>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 step-desc">
+      <div class="num">
+        <img src="/img/docs/symbols/step-3@2x.png" width="52" height="52">
+      </div>
+      <div class="desc">
+        <h3>运行它</h3>
+        <p>
+          Ionic应用基于Cordova, 因此我们可以使用 Cordova 工具来编译，测试，和部署我们的应用，但是我们通过ionic工具来提供简单的方式来做同样的事(替换ios为android来编译Android):
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 code">
+{% highlight bash %}
+
+$ cd myApp
+$ ionic platform add ios
+$ ionic build ios
+$ ionic emulate ios
+
+{% endhighlight %}
+    </div>
+  </div>
+
+  <div class="col-md-offset-2 col-md-2">
+    <div id="ionitron-image"></div>
+  </div>
+  <div class="col-md-7">
+    <h3>耶，就是这么简单。你也许想知道下一步是什么了...</h3>
+    <p class="italic">
+      <i>Ionitron 建议你前去<a href="/docs/">Docs</a> 大致看一下Ionic的CSS和Javascript组件。确定要加入 <a href="http://forum.ionicframework.com/">论坛</a> 就键入你的邮箱来获得Ionic更新:</i>
+    </p>
+    <form action="http://codiqa.createsend.com/t/t/s/jytylh/" method="post" class="form row">
+      <div class="input-group col-sm-8">
+        <input id="fieldEmail" name="cm-jytylh-jytylh" class="form-control" type="email" placeholder="Enter your email for Ionic updates, tips, and news!" required />
+      </div>
+      <div class="input-group col-sm-4">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="submit">订阅</button>
+        </span>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>

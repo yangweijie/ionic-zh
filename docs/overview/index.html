@@ -1,0 +1,211 @@
+---
+layout: docs_overview
+title: Ionic 文档 概述
+header_title: Ionic 文档 概述
+header_sub_title: 一个Ionic概述，为什么我们创建了它，如何使用，你用的时候该知道的
+search_sections: true
+---
+
+<!-- Getting Started
+  ================================================== -->
+
+<section class="docs-section active" id="overview">
+
+  <h1 class="title"><a href="#overview">概述</a></h1>
+
+  <p>欢迎！Ionic 是一个强大的HTML5原生应用开发框架帮助你打造原生感觉的移动应用，一切都是web技术比如HTML, CSS, and Javascript。</p>
+  <p>
+  Ionic主要关注于你应用的外观和体验还有 UI 交互。这就意味着我们不是一个<a href="http://phonegap.com/">PhoneGap</a>的替代者或者你最喜欢的Javascript框架。相反，Ionic 适合那些简化你应用最大一部分：前后端的项目。我们推荐阅读<a href="../../blog/where-does-the-ionic-framework-fit-in/index.html">Ionic 框架适合用在哪里？</a> 来很好理解框架的目标。
+  </p>
+  <p>
+    <b>Ionic 目前依赖于AngularJS</b> 为了工作时能发挥出全部潜力。虽然你仍然可以只使用框架的CSS部分,你将会错过强大的交互，手势，动画和其他的东西。将来我们会扩展超出Angular来支持其他的框架。
+  </p>
+  <!--
+  <p>
+  You'll often use Ionic with your choice of Javascript framework, and your choice of native wrapper. We think <a href="http://angularjs.org/">AngularJS</a> is one of the best javascript frameworks around, so we've also built easy-to-use AngularJS extensions to make integration incredibly simple. As of Ionic 0.9.0, Angular is the only recommended way to build Ionic apps (we are working to change this though).
+  </p>
+  -->
+  <p>
+    我们在将来将放出 Cordova/PhoneGap 插件 来提高你应用的兼容性。
+  </p>
+</section>
+
+
+
+<!-- Download
+  ================================================== -->
+<section class="docs-section" id="download">
+
+  <h2 class="title"><a href="#download">下载</a></h2>
+
+  <p>
+    下载最新Ionic官方包然后开始吧！
+  </p>
+  <ul>
+    <li>最新版本: {{ site.latest_version }}</li>
+    <li>发布于: {{ site.latest_release_date }}</li>
+  </ul>
+  <p>
+    <a class="btn btn-primary" href="{{ site.latest_download }}">下载 v{{ site.latest_version }}</a>
+  </p>
+  <p>
+    你也可以<a href="https://github.com/driftyco/ionic">在Github上克隆它</a> 来获得最新版。
+    另外，所有我们<a href="https://github.com/driftyco/ionic/releases">先前版本</a> 也可以在Github上找到。
+  </p>
+</section>
+
+
+<!-- Seed
+  ================================================== -->
+<section class="docs-section" id="starter">
+
+  <h2 class="title"><a href="#starter">命令行工具和种子项目</a></h2>
+
+  <p>
+    我们有一个node.js 单元可以用来快速开始一个Ionic项目。我们致力于打造这个工具的功能，现在你就可以快速创建一个通过我们的<a href="https://github.com/driftyco/ionic-app-base">种子项目</a> 通过做:
+  </p>
+  <p>
+{% highlight bash %}
+$ sudo npm install -g ionic
+$ ionic start myproject
+{% endhighlight %}
+  </p>
+
+  <p>
+    你也可以克隆<a href="https://github.com/driftyco/ionic-app-base">种子项目</a> 本身，它给了你需要通过Cordova 和 AngularJS 创建Ionic应用的一切。
+  </p>
+</section>
+
+
+<!-- What's Included
+  ================================================== -->
+<section class="docs-section" id="whats-included">
+
+  <h2 class="title"><a href="#whats-included">包含了什么</a></h2>
+  <p>
+    Ionic 包含了你应用要用的压缩过的Javascript 和CSS,可选的Sass 文件和JS框架扩展,以及一个伟大的<a href="http://ionicons.com/">图标包</a>。
+  </p>
+  <!--
+  <p>
+    The project structure is organized as follows:
+  </p>
+  <ul>
+    <li><code>release/</code> - compiled versions of Ionic JS and CSS, along with the required font files for the Ionicons icon pack.</li>
+    <li><code>js/</code> - the source Javascript code for the project and any framework extensions (like AngularJS) that we have provided.</li>
+    <li><code>scss/</code> - the raw SCSS files that can be used to integrate the Ionic SCSS into your own project. Or you can use the compiled CSS in the release folder above.</li>
+    <li><code>test/</code> - Unit tests for the Javascript files, along with visual tests of components.</li>
+  </ul>
+  -->
+</section>
+
+
+<!-- CSS/Sass
+  ================================================== -->
+<section class="docs-section" id="css-sass">
+
+  <h2 class="title"><a href="#css-sass">CSS/Sass</a></h2>
+
+  <p>
+    CSS可以用默认的，但是它也可以被开发者增强。简单的方式你只要加入你的CSS然后覆盖默认属性就行了。为了更强大和灵活，核心是用<a href="http://sass-lang.com/">Sass</a>写的并包含了简单定制的变量和混合。尽管默认手机相近于iOS，我们让CSS处于一个可以易于扩展获得你想要的外观和感觉的版本。
+  </p>
+
+  <p>
+    <a class="btn btn-primary" href="/tutorials/customizing-ionic-with-sass/">如何通过Sass定制Ionic</a>
+  </p>
+
+</section>
+
+
+
+<!-- AngularJS
+  ================================================== -->
+<!--
+<section class="docs-section" id="angularjs">
+
+  <h2 class="title"><a href="#angularjs">AngularJS</a></h2>
+
+  <p>
+    Ionic ships with some great <a href="http://angularjs.org/">AngularJS</a> extensions by default. This makes it easy to use Angular directives instead of the raw HTML/CSS markup, and also makes it easy to use common Ionic services in your controllers and directives.
+  </p>
+  <p>
+    To use the AngularJS extensions, copy <code>release/js/ionic-angular.js</code> and include it after <code>release/js/ionic.js</code> in your app. See the Angular doc section for more details on using the extensions.
+  </p>
+  <p>
+    Ionic-Angular relies on Angular {{ site.included_angular_version }}, and includes ngAnimate, ngSanitize, and ngResource.
+  </p>
+
+  <p>
+    <a class="btn btn-primary" href="/docs/api/">Ionic Controllers</a>
+  </p>
+</section>
+-->
+
+
+
+<!-- Phonegap
+  ================================================== -->
+<section class="docs-section" id="phonegap">
+
+  <h2 class="title"><a href="#phonegap">PhoneGap/Cordova/Trigger.io</a></h2>
+
+  <p>
+    我们的示例在Cordova 3.4.0上测试的,但是应该在其他任何版本上可工作，因为还没有加入插件。要添加到你的<a href="http://phonegap.com/">PhoneGap</a>, <a href="http://cordova.apache.org/">Cordova</a>, 或者 <a href="https://trigger.io/">Trigger.io</a> 项目,只要在你web应用的根目录里引入Ionic CSS 和 JS 文件。
+  </p>
+
+</section>
+
+
+
+<!-- Browser Support
+  ================================================== -->
+<section class="docs-section" id="browser-support">
+
+  <h2 class="title"><a href="#browser-support">浏览器支持</a></h2>
+
+  <p>
+    Ionic 专注于打造 <strong>native/hybrid</strong> 移动应用多于移动网站。
+  </p>
+  <p>
+    因此，我们的浏览器支持和Web View Api在相应平台上对移动应用支持的一样。
+    对于 Ionic 1.0.0-beta.4 "antimony-antelope", 即UIWebView for iOS 6+, 和Android 4+ (一些支持 for 2.3). Windows Phone 和
+    FirefoxOS 支持在我们的roadmap中。
+  </p>
+</section>
+
+
+
+<!-- License
+  ================================================== -->
+<section class="docs-section" id="license">
+  <h2 class="title"><a href="#license">版权</a></h2>
+  <p>Ionic 是一个开源框架遵循一个宽容的<a href="http://opensource.org/licenses/MIT">MIT</a> 协议。这意味着你可以使用Ionic在你个人或者商业项目里免费使用它。MIT 也是很多流行项目使用的协议比如jQuery 和Ruby on Rails。
+  </p>
+  <p>
+  网站内容在这里(在 <a href="http://github.com/driftyco/ionic-site">ionic-site</a> repo) 是在Apache 2 协议下的。
+  </p>
+</section>
+
+
+
+<!-- Contribute
+  ================================================== -->
+<section class="docs-section" id="contribute">
+  <h2 class="title"><a href="#contribute">贡献到Ionic 开发</a></h2>
+  <p>
+     我们愿意得到你们的帮助来改进Ionic, 不论时提高框架的代码还是改善文档。想了解更多关于贡献的信息，查看我们的<a href="/contribute/">贡献者指南</a>.
+  </p>
+</section>
+
+
+
+<!-- About Ionic
+  ================================================== -->
+<section class="docs-section" id="about">
+  <h2 class="title"><a href="#about">关于Ionic</a></h2>
+  <p>
+    Ionic 是由<a href="http://twitter.com/benjsperry" target="_blank">@benjsperry</a>, <a href="http://twitter.com/adamdbradley" target="_blank">@adamdbradley</a>, 和 <a href="http://twitter.com/maxlynch" target="_blank">@maxlynch</a> 在 <a href="http://drifty.com/" target="_blank">Drifty</a>, 一个独立的自发的软件公司，创建过很多好产品比如<a href="http://codiqa.com/" target="_blank">Codiqa</a>和<a href="http://jetstrap.com/" target="_blank">Jetstrap</a>里创建的。
+  </p>
+  <p>
+    Ionic 致力于将移动端的HTML5带入未来。我们想要一个移动框架不仅外观好看和功能良好，而且足够强大到开发者可以创建最神奇的应用。 HTML5的时代已经到来。Ionic 是证明这点的框架
+  </p>
+</section>

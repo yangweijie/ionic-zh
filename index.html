@@ -1,0 +1,235 @@
+---
+layout: full
+title: "Ionic: 高级HTML5 Hybrid 移动应用框架"
+body_css: "home"
+---
+
+<div class="primary-row horizontal-gradient">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>
+          创建神奇的应用
+        </h1>
+        <h2>
+          美丽，开源前-后一体式的用HTML5开发混合移动应用的框架。
+        </h2>
+        <p class="btn-row">
+          <a id="repo-download" class="btn btn-primary btn-download desktop-btn" href="{{ site.latest_download }}" alt="Download v{{ site.latest_version }}">Download beta</a>
+          <a class="btn btn-primary btn-get-started desktop-btn" href="/getting-started/">Get started</a>
+          <a class="btn btn-primary btn-download mobile-btn" href="/docs/">View Docs</a>
+        </p>
+        <p class="version-text">
+          v{{ site.latest_version }} &#183; {{ site.latest_release_date }} &#183; MIT Licensed
+        </p>
+      </div>
+      <div class="col-sm-6 feature-img">
+        <a class="demo-link" href="https://github.com/driftyco/ionic-weather/" target="_blank">Ionic Weather Demo App</a>
+        <img class="feature-img-loading" src="/img/homepage/phones-weather-demo@2x.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="utility-bar">
+  <div class="container">
+    <div class="row">
+      <ul class="social-row ionic col-md-7">
+        <li><a href="https://github.com/driftyco/ionic" target="_blank"><i class="ion-social-github"></i> <span id="gh-stargazers"></span> Stars</a></li>
+        <li><a href="https://github.com/driftyco/ionic" target="_blank"><i class="ion-fork-repo"></i> <span id="gh-forks"></span> Forks</a></li>
+        <li><a href="https://twitter.com/IonicFramework" target="_blank"><i class="ion-social-twitter"></i> <span id="tw-followers"></span> Followers</a></li>
+      </ul>
+      <form action="http://codiqa.createsend.com/t/t/s/jytylh/" method="post" class="input-group col-md-5">
+        <input name="cm-jytylh-jytylh" class="form-control" type="email" placeholder="Enter your email for the latest ionic news" required />
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Subscribe</button>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.feature-img-loading').on('load', function() {
+    $('.feature-img').addClass('img-loaded');
+    $(this).remove();
+  });
+
+  function digits(n){
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  $.ajax({
+    dataType: "jsonp",
+    url: "https://api.github.com/repos/driftyco/ionic",
+    success: function(data){
+      if(data) {
+        if(data.data.watchers){
+          $("#gh-stargazers").html(digits(data.data.watchers));
+        }
+        if(data.data.forks){
+          $("#gh-forks").html(digits(data.data.forks));
+        }
+      }
+    }
+  });
+  $.ajax({
+    dataType: "jsonp",
+    url: "https://cdn.api.twitter.com/1/users/show.json?screen_name=ionicframework",
+    success: function(data){
+      if(data && data.followers_count){
+        $("#tw-followers").html(digits(data.followers_count));
+      }
+    }
+  });
+</script>
+
+<div id="learn-more">
+
+  <div class="desc-row">
+
+    <h3>
+      创建混合移动应用通过你喜爱的web技术。
+    </h3>
+    <p>
+      免费开源，Ionic 提供了一个移动优化的HTML, CSS and JS <a href="/docs/components/">组件</a>
+      用于构建高交互应用。用 <a href="http://sass-lang.com/" target="_blank">Sass</a>
+      构建并且优化了<a href="http://angularjs.org/" target="_blank">AngularJS</a>.
+    </p>
+
+  </div>
+
+  <div class="feature-row img-performance">
+
+    <h4>性能痴迷</h4>
+    <p>
+      速度很重要。如此重要到当它不在那儿你才会注意到。Ionic 立志于在最新移动设备上运行和表现的伟大。 通过<strong>最小的 DOM</strong> 操作, <strong>零 jQuery</strong>, 和 <strong>硬件加速的</strong> 过场,
+      有件事是肯定的：你将被留下深刻印象。
+    </p>
+
+  </div>
+
+  <div class="feature-row img-angular img-right">
+
+    <h4>AngularJS &amp; Ionic</h4>
+    <p>
+      天作之和。 Ionic 采用 <a href="http://angularjs.org/">AngularJS</a>
+      来创建一个最适合开发丰富和健壮应用的框架。Ionic 不仅看上去不错，而且它的核心架构是用于 <strong>严格的应用开发</strong>,
+      并且和AngularJS完美融合。
+    </p>
+
+  </div>
+
+  <div class="feature-row img-native">
+
+    <h4>关注原生</h4>
+    <p>
+      Ionic是仿照流行的本地移动开发SDKs,使他让每个人都易于理解如何构建一个本地iOS 或 Android的应用。只要把它拖到你的代码里让后开始做,并且当完成时通过PhoneGap 推送。开发一次，任何地方部署。
+    </p>
+
+  </div>
+
+  <div class="feature-row img-design img-right">
+
+    <h4>美丽设计</h4>
+    <p>
+      干净，简单，实用。Ionic 已经被设计了美丽地在所有已有移动设备上工作和显示。随着成吨的移动流行组件，排版，交互范式，以及一个华丽的（可扩展的）基本主题，你将怀疑你离开它就不能活了。
+    </p>
+
+  </div>
+
+  <div class="feature-row img-nerds">
+
+      <h4>书呆子制作的(像你一样)</h4>
+      <p>
+        由web技术方面的开发者和设计专家们打造的。 Ionic 专注于符合标准的代码，前瞻性思维，并且通过
+        <a href="https://github.com/driftyco/ionic">Github</a>管理。我们想使用HTML5技术做移动开发酷且简单。
+      </p>
+
+  </div>
+
+  {% include testimonials.html %}
+
+  <!--
+  <div class="desc-row examples-row">
+
+    <h3>
+      Ionic examples
+    </h3>
+    <p>
+      Check out our <a href="/examples/showcase/">examples</a>, including starter templates and showcase demos.
+    </p>
+
+    <div>
+      <img src="/img/examples.jpg" style="max-width: 100%" alt="Ionic examples">
+    </div>
+
+  </div>
+  -->
+
+</div>
+
+<div class="pre-footer">
+
+  <div class="row ionic">
+
+    <div class="col-sm-6 col-a">
+      <h4>
+        <a href="/docs/">Getting started <span class="icon ion-arrow-right-c"></span></a>
+      </h4>
+      <p>
+        Learn more about how Ionic was built, why you should use it, and what's included. We'll cover
+        the basics and help you get started from the ground up.
+      </p>
+    </div>
+
+    <div class="col-sm-6 col-b">
+      <h4>
+        <a href="/docs/components/">Documentation <span class="icon ion-arrow-right-c"></span></a>
+      </h4>
+      <p>
+        What are you waiting for? Take a look and get coding! Our documentation covers all you need to know
+        to get an app up and running in minutes.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="pre-footer footer-social">
+
+  <p>
+    Help us change the way the world develops for mobile.
+    <span class="spread-word">Spread the word.</span>
+  </p>
+  <ul class="share-row">
+    <li class="github-watch">
+      <iframe src="http://ghbtns.com/github-btn.html?user=driftyco&amp;repo=ionic&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="180" height="25"></iframe>
+    </li>
+    <li class="gplus">
+      <div class="g-plusone" data-size="medium"></div>
+      <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/platform.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+    </li>
+    <li class="twitter-share">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="ionicframework" data-hashtags="html5,mobile,angularjs" data-related="maxlynch,adamdbradley,benjsperry,drifty">Tweet</a>
+    </li>
+    <li class="twitter-follow">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-share-button" data-href="http://ionicframework.com/" data-type="button_count"></div>
+    </li>
+  </ul>
+
+</div>

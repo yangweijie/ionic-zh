@@ -1,0 +1,74 @@
+
+<div class="testimonials" id="testimonials">
+
+  <div class="testimonial-content">
+
+    <blockquote class="testimonial-0 active" data-testimonial="0">
+      <p>
+        Ionic 是我所有项目用的框架，我无法确定可以给一个更大的恭维了。Ionic内含的先天风格和精致是超棒的使得构建专业级别的移动应用超级简单。
+      </p>
+      <footer style="background-image: url('/img/testimonials/testimonial-hampton@2x.png')">
+        <cite>Hampton Catlin</cite>
+        <div><a href="http://sass-lang.com/">Sass</a>作者</div>
+      </footer>
+    </blockquote>
+
+    <blockquote class="testimonial-1" data-testimonial="1">
+      <p>
+        Ionic将会极大的改变移动应用创建的方式。他们选择AngularJS意味着创建功能是一股微风感觉像原生方式。你的开发者和用户会感谢你的。
+      </p>
+      <footer style="background-image: url('/img/testimonials/testimonial-james@2x.png')">
+        <cite>James Tamplin</cite>
+        <div>Co-founder &amp; CEO, <a href="https://www.firebase.com/">Firebase</a></div>
+      </footer>
+    </blockquote>
+
+    <blockquote class="testimonial-2" data-testimonial="2">
+      <p>
+        我不启发了当我发现Ionic。它填补了构建了移动应用的一个鸿沟，并且解决了许多复杂问题，不然需要加载许多库，让你的代码更干净。总之，它使移动开发有趣而迅捷，因此你可以制作更多！
+      </p>
+      <footer style="background-image: url('/img/testimonials/testimonial-holly@2x.png')">
+        <cite>Holly Schinsky</cite>
+        <div>Developer Evangelist, <a href="http://devgirl.org/">Adobe</a></div>
+      </footer>
+    </blockquote>
+
+  </div>
+
+</div>
+
+<script>
+
+  $(window).load(function(){
+    var container = $('#testimonials');
+    var quotes = container.find('blockquote');
+
+    var activeQuote = 0;
+    var timerId;
+
+    function startTimeout() {
+      timerId = setTimeout(start, 9000);
+    }
+
+    function start() {
+      activeQuote++;
+      if(activeQuote>=quotes.length) activeQuote = 0;
+      quotes.removeClass('active');
+      quotes.eq(activeQuote).addClass('active');
+      startTimeout();
+    }
+
+    quotes.find('footer').click(function(){
+      clearTimeout(timerId);
+      quotes.removeClass('active');
+      var blockquote = $(this).closest('blockquote');
+      activeQuote = parseInt( blockquote.data('testimonial'), 10);
+      blockquote.addClass('active');
+      startTimeout();
+    });
+
+    startTimeout();
+
+  });
+
+</script>
